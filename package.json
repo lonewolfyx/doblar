@@ -1,0 +1,60 @@
+{
+    "name": "doblar",
+    "author": "lonewolfyx <877085893@qq.com>",
+    "version": "0.0.0",
+    "description": "quickly create a ts library or ts monorepo for a cli tools",
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "doblar": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "format": "prettier --write ./"
+    },
+    "keywords": [
+        "create",
+        "cli",
+        "torque-cli"
+    ],
+    "homepage": "https://github.com/lonewolfyx/clki",
+    "bugs": {
+        "url": "https://github.com/lonewolfyx/clki/issues"
+    },
+    "files": [
+        "dist",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lonewolfyx/clki.git"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "^5.2.3",
+        "cac": "^6.7.14",
+        "chalk": "^5.4.1",
+        "commander": "^13.1.0",
+        "prompts": "^2.4.2",
+        "vite": "^6.3.5",
+        "vue": "^3.5.13"
+    },
+    "devDependencies": {
+        "@lonewolfyx/tsconfig": "^0.0.5",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.13.10",
+        "@types/prompts": "^2.4.9",
+        "kleur": "^4.1.5",
+        "prettier": "^3.5.3",
+        "prettier-plugin-multiline-arrays": "^4.0.3",
+        "tinyexec": "^1.0.0",
+        "tsup": "^8.4.0",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.2"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    }
+}

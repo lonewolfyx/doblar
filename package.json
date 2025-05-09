@@ -47,6 +47,7 @@
         "@types/prompts": "^2.4.9",
         "esbuild-plugin-vue": "^0.2.4",
         "kleur": "^4.1.5",
+        "ora": "^8.2.0",
         "prettier": "^3.5.3",
         "prettier-plugin-multiline-arrays": "^4.0.3",
         "tinyexec": "^1.0.0",

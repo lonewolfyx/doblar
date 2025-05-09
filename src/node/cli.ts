@@ -4,6 +4,7 @@ import { version } from '../../package.json'
 import cac from 'cac'
 import chalk from 'chalk'
 import { devCommand } from '@/commands/dev.ts'
+import { buildCommand } from '@/commands/build.ts'
 
 const cli = cac('doblar')
 
@@ -25,6 +26,14 @@ cli
     .option('--port <port>', '指定端口号', { default: 3000 })
     .action(async (options) => {
         await devCommand(options)
+    })
+
+// 构建打包命令
+cli
+    .command('build', '构建应用')
+    .option('--outDir <dir>', '输出目录', { default: 'dist' })
+    .action(async (options) => {
+        await buildCommand(options)
     })
 
 // 解析命令行参数

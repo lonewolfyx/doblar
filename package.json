@@ -1,8 +1,8 @@
 {
 	"name": "doblar",
-	"author": "lonewolfyx <877085893@qq.com>",
+	"author": "lonewolfyx",
 	"version": "0.0.0",
-	"description": "quickly create a ts library or ts monorepo for a cli tools",
+	"description": "Quickly construct openAPI documentation",
 	"type": "module",
 	"main": "dist/node/cli.js",
 	"bin": {
@@ -16,19 +16,18 @@
 	"keywords": [
 		"create",
 		"cli",
-		"torque-cli"
+		"doblar-cli"
 	],
-	"homepage": "https://github.com/lonewolfyx/clki",
+	"homepage": "https://github.com/lonewolfyx/doblar",
 	"bugs": {
-		"url": "https://github.com/lonewolfyx/clki/issues"
+		"url": "https://github.com/lonewolfyx/doblar/issues"
 	},
 	"files": [
-		"dist",
-		"template"
+		"dist"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/lonewolfyx/clki.git"
+		"url": "git+https://github.com/lonewolfyx/doblar.git"
 	},
 	"dependencies": {
 		"@vitejs/plugin-vue": "^5.2.3",

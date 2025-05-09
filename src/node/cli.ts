@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { version } from '../package.json'
+import { version } from '../../package.json'
 import cac from 'cac'
 import chalk from 'chalk'
 import { devCommand } from '@/commands/dev.ts'
@@ -24,7 +24,6 @@ cli
     .command('dev', '启动开发服务器')
     .option('--port <port>', '指定端口号', { default: 3000 })
     .action(async (options) => {
-        console.log(chalk.blue('开始创建调试应用...'), options)
         await devCommand(options)
     })
 

@@ -1,7 +1,7 @@
 import { APP_PATH } from '@/node/alias.ts'
 
 export const renderTemplatePage = (): string => {
-    return `\
+	return `\
 <!DOCTYPE html>
     <html lang="en">
       <head>

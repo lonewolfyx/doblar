@@ -7,42 +7,41 @@ import { buildPagePlugin } from '@/node/plugins/build.page.ts'
 import { resolveConfig } from '@/node/config.ts'
 
 export const buildCommand = async (options: { outDir: string }) => {
-    console.log(blue('正在构建应用...'))
+	console.log(blue('正在构建应用...'))
 
-    const config = resolveConfig()
+	const config = resolveConfig()
 
-    await build({
-        configFile: false,
-        root: config.root,
-        build: {
-            emptyOutDir: true,
-            outDir: resolve(config.root, options.outDir),
-            minify: true,
-            cssCodeSplit: false,
-            rollupOptions: {
-                input: {
-                    app: resolve(APP_PATH, 'index.js')
-                },
-                preserveEntrySignatures: 'allow-extension',
-                output: {
-                    manualChunks: (id) => {
-                        if (id.includes('node_modules')) {
-                            const chunk: string = (id.split('node_modules/')[1] || '').replace('@', '')
-                            return chunk.split('/')[0]
-                        }
-                    },
-                    entryFileNames: 'assets/js/[name].[hash].js',
-                    chunkFileNames: 'assets/js/[name].[hash].js',
-                    assetFileNames: 'assets/[ext]/[name].[hash].[ext]'
-                }
-            }
-        },
-        plugins: [
-            vue(),
-            buildPagePlugin()
-        ]
-    })
+	await build({
+		configFile: false,
+		root: config.root,
+		build: {
+			emptyOutDir: true,
+			outDir: resolve(config.root, options.outDir),
+			minify: true,
+			cssCodeSplit: false,
+			rollupOptions: {
+				input: {
+					app: resolve(APP_PATH, 'index.js')
+				},
+				preserveEntrySignatures: 'allow-extension',
+				output: {
+					manualChunks: (id) => {
+						if (id.includes('node_modules')) {
+							const chunk: string = (id.split('node_modules/')[1] || '').replace('@', '')
+							return chunk.split('/')[0]
+						}
+					},
+					entryFileNames: 'assets/js/[name].[hash].js',
+					chunkFileNames: 'assets/js/[name].[hash].js',
+					assetFileNames: 'assets/[ext]/[name].[hash].[ext]'
+				}
+			}
+		},
+		plugins: [
+			vue(),
+			buildPagePlugin()
+		]
+	})
 
-    console.log(green('应用构建成功！'))
-
+	console.log(green('应用构建成功！'))
 }

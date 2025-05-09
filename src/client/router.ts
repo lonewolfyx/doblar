@@ -2,22 +2,22 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 // import { openApiRoutes } from 'virtual:doblar-routes'; // Routes from OpenAPI
 
 const routes: Array<RouteRecordRaw> = [
-    {
-        path: '/',
-        name: 'home',
-        component: () => import('./views/HomeView.vue')
-    },
-    {
-        path: '/sss',
-        name: 'hosme',
-        component: () => import('./views/HomeView.vue')
-    },
-    {
-        path: '/items-example',
-        name: 'items-example',
-        // You would typically create a component for this view
-        component: () => import('./views/ItemsExampleView.vue')
-    }
+	{
+		path: '/',
+		name: 'home',
+		component: () => import('./views/HomeView.vue')
+	},
+	{
+		path: '/sss',
+		name: 'hosme',
+		component: () => import('./views/HomeView.vue')
+	},
+	{
+		path: '/items-example',
+		name: 'items-example',
+		// You would typically create a component for this view
+		component: () => import('./views/ItemsExampleView.vue')
+	}
 ]
 
 // Dynamically add routes from OpenAPI schema if needed
@@ -37,8 +37,8 @@ openApiRoutes.forEach(route => {
 */
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL), // BASE_URL is provided by Vite
-    routes
+	history: createWebHistory(import.meta.env.BASE_URL), // BASE_URL is provided by Vite
+	routes
 })
 
 export default router

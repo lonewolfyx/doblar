@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import { devPagePlugin } from '@/node/plugins/dev.page.ts'
 import { DIST_CLIENT_PATH } from '@/node/alias.ts'
 import { resolveConfig } from '@/node/config.ts'
+import tailwindcss from '@tailwindcss/vite'
 
 export const devCommand = async (options: { port: number }) => {
 	console.log(blue('启动开发服务器...'))
@@ -27,9 +28,10 @@ export const devCommand = async (options: { port: number }) => {
 		},
 		plugins: [
 			vue(),
-			devPagePlugin()
-		]
-	})
+			devPagePlugin(),
+            tailwindcss(),
+        ]
+    })
 
 	await server.listen()
 	server.printUrls()

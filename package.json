@@ -30,11 +30,13 @@
 		"url": "git+https://github.com/lonewolfyx/doblar.git"
 	},
 	"dependencies": {
+		"@tailwindcss/vite": "^4.1.6",
 		"@vitejs/plugin-vue": "^5.2.3",
 		"cac": "^6.7.14",
 		"chalk": "^5.4.1",
 		"commander": "^13.1.0",
 		"prompts": "^2.4.2",
+		"tailwindcss": "^4.1.6",
 		"vite": "^6.3.5",
 		"vue": "^3.5.13",
 		"vue-router": "^4.5.1"

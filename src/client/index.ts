@@ -1,6 +1,7 @@
 import { createApp as createClientApp, defineComponent, h } from 'vue'
 import { RouterView } from 'vue-router'
 import router from '@/client/router.ts'
+import '@/client/assets/tailwind.css'
 
 export const createApp = () => {
 	const app = createClientApp(

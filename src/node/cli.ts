@@ -16,12 +16,16 @@ cli.command('create', '创建新应用').action(async () => {
 // 开发调试命令
 cli.command('dev', '启动开发服务器')
     .option('--port <port>', '指定端口号', { default: 3000 })
-    .action(() => {})
+    .action(() => {
+        console.log('dev')
+    })
 
 // 构建打包命令
 cli.command('build', '构建应用')
     .option('--outDir <dir>', '输出目录', { default: 'dist' })
-    .action(() => {})
+    .action(() => {
+        console.log('build')
+    })
 
 // 解析命令行参数
 cli.parse(process.argv)

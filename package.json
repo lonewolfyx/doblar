@@ -4,9 +4,8 @@
 	"version": "0.0.0",
 	"description": "Quickly construct openAPI documentation",
 	"type": "module",
-	"main": "dist/node/cli.js",
 	"bin": {
-		"doblar": "./dist/node/cli.js"
+		"doblar": "./bin/cli.js"
 	},
 	"scripts": {
 		"build": "tsup",
@@ -14,9 +13,13 @@
 		"format": "prettier --write ./"
 	},
 	"keywords": [
+		"doblar",
 		"create",
 		"cli",
-		"doblar-cli"
+		"doblar-cli",
+		"document",
+		"openapi",
+		"swagger"
 	],
 	"homepage": "https://github.com/lonewolfyx/doblar",
 	"bugs": {
@@ -30,29 +33,18 @@
 		"url": "git+https://github.com/lonewolfyx/doblar.git"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.1.6",
-		"@vitejs/plugin-vue": "^5.2.3",
 		"cac": "^6.7.14",
-		"chalk": "^5.4.1",
-		"commander": "^13.1.0",
-		"prompts": "^2.4.2",
-		"tailwindcss": "^4.1.6",
-		"vite": "^6.3.5",
-		"vue": "^3.5.13",
-		"vue-router": "^4.5.1"
+		"chalk": "^5.4.1"
 	},
 	"devDependencies": {
 		"@lonewolfyx/tsconfig": "^0.0.5",
 		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^22.13.10",
-		"@types/prompts": "^2.4.9",
-		"esbuild-plugin-vue": "^0.2.4",
 		"kleur": "^4.1.5",
 		"ora": "^8.2.0",
 		"prettier": "^3.5.3",
 		"prettier-plugin-multiline-arrays": "^4.0.3",
 		"tinyexec": "^1.0.0",
-		"tsup": "^8.4.0",
 		"tsx": "^4.19.3",
 		"typescript": "^5.8.2"
 	},

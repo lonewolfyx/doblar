@@ -9,7 +9,7 @@ cli.version(version)
 cli.help()
 
 // 创建应用命令
-cli.command('create, c', '创建新应用').action(async () => {
+cli.command('create', '创建新应用').action(async () => {
     console.log(chalk.blue('开始创建应用...'))
 })
 

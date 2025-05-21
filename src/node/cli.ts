@@ -1,6 +1,7 @@
 import { version } from '../../package.json'
 import cac from 'cac'
 import chalk from 'chalk'
+import { devCommand } from '@/node/command/dev.ts'
 
 const cli = cac('doblar')
 
@@ -16,8 +17,8 @@ cli.command('create', '创建新应用').action(async () => {
 // 开发调试命令
 cli.command('dev', '启动开发服务器')
     .option('--port <port>', '指定端口号', { default: 3000 })
-    .action(() => {
-        console.log('dev')
+    .action(async () => {
+        await devCommand()
     })
 
 // 构建打包命令

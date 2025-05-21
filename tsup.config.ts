@@ -5,8 +5,9 @@ export default defineConfig({
     bundle: true,
     splitting: true,
     format: ['esm'],
-    outDir: 'dist',
+    outDir: 'dist/node',
     shims: true,
     clean: true,
+    skipNodeModulesBundle: true,
     dts: true
 })

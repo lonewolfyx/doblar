@@ -1,5 +1,5 @@
-declare module '*.html';
-declare module '*.vue';
-declare module '*.css';
-declare module '*.json';
-declare module '*.ts';
+declare module '*.html'
+declare module '*.vue'
+declare module '*.css'
+declare module '*.json'
+declare module '*.ts'

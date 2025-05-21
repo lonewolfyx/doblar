@@ -1,56 +1,57 @@
 {
-	"name": "doblar",
-	"author": "lonewolfyx",
-	"version": "0.0.0",
-	"description": "Quickly construct openAPI documentation",
-	"type": "module",
-	"bin": {
-		"doblar": "./bin/cli.js"
-	},
-	"scripts": {
-		"build": "tsup",
-		"dev": "tsup --watch",
-		"format": "prettier --write ./"
-	},
-	"keywords": [
-		"doblar",
-		"create",
-		"cli",
-		"doblar-cli",
-		"document",
-		"openapi",
-		"swagger"
-	],
-	"homepage": "https://github.com/lonewolfyx/doblar",
-	"bugs": {
-		"url": "https://github.com/lonewolfyx/doblar/issues"
-	},
-	"files": [
-		"dist"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/lonewolfyx/doblar.git"
-	},
-	"dependencies": {
-		"cac": "^6.7.14",
-		"chalk": "^5.4.1"
-	},
-	"devDependencies": {
-		"@lonewolfyx/tsconfig": "^0.0.5",
-		"@types/fs-extra": "^11.0.4",
-		"@types/node": "^22.13.10",
-		"kleur": "^4.1.5",
-		"ora": "^8.2.0",
-		"prettier": "^3.5.3",
-		"prettier-plugin-multiline-arrays": "^4.0.3",
-		"tinyexec": "^1.0.0",
-		"tsx": "^4.19.3",
-		"typescript": "^5.8.2"
-	},
-	"license": "MIT",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org",
-		"access": "public"
-	}
+    "name": "doblar",
+    "author": "lonewolfyx",
+    "version": "0.0.0",
+    "description": "Quickly construct openAPI documentation",
+    "type": "module",
+    "bin": {
+        "doblar": "./bin/cli.js"
+    },
+    "scripts": {
+        "dev": "tsup --watch",
+        "build": "tsup",
+        "format": "prettier --write ./"
+    },
+    "keywords": [
+        "doblar",
+        "create",
+        "cli",
+        "doblar-cli",
+        "document",
+        "openapi",
+        "swagger"
+    ],
+    "homepage": "https://github.com/lonewolfyx/doblar",
+    "bugs": {
+        "url": "https://github.com/lonewolfyx/doblar/issues"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lonewolfyx/doblar.git"
+    },
+    "dependencies": {
+        "cac": "^6.7.14",
+        "chalk": "^5.4.1"
+    },
+    "devDependencies": {
+        "@lonewolfyx/tsconfig": "^0.0.5",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.13.10",
+        "kleur": "^4.1.5",
+        "ora": "^8.2.0",
+        "prettier": "^3.5.3",
+        "prettier-plugin-multiline-arrays": "^4.0.3",
+        "tinyexec": "^1.0.0",
+        "tsup": "^8.5.0",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.2"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    }
 }

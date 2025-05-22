@@ -39,7 +39,8 @@
         "chalk": "^5.4.1",
         "tailwindcss": "^4.1.7",
         "vite": "^6.3.5",
-        "vue": "^3.5.14"
+        "vue": "^3.5.14",
+        "vue-router": "^4.5.1"
     },
     "devDependencies": {
         "@lonewolfyx/tsconfig": "^0.0.5",

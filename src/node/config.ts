@@ -10,6 +10,7 @@ export const resolveConfig = (): IConfig => {
     return {
         root,
         outDir: resolve(root, 'dist'),
-        cacheDir: cacheDir
+        cacheDir: cacheDir,
+        force: true
     }
 }

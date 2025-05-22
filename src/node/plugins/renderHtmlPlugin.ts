@@ -5,23 +5,22 @@ import { cleanUrl } from '@/node/util.ts'
 import { resolve } from 'node:path'
 import fs from 'fs-extra'
 
-export const renderHtmlPlugin = (config: IConfig): Plugin => {
-    console.log(config)
+export const renderHtmlPlugin = (): Plugin => {
     return {
         name: 'index-html',
         transformIndexHtml(html) {
             return {
                 html,
                 tags: [
-                //     {
-                //         tag: 'link',
-                //         attrs: {
-                //             rel: 'icon',
-                //             href: ``,
-                //             type: 'image/image/svg+xml'
-                //         },
-                //         injectTo: 'head'
-                //     },
+                    //     {
+                    //         tag: 'link',
+                    //         attrs: {
+                    //             rel: 'icon',
+                    //             href: ``,
+                    //             type: 'image/image/svg+xml'
+                    //         },
+                    //         injectTo: 'head'
+                    //     },
                     {
                         tag: 'script',
                         attrs: {

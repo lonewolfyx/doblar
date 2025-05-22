@@ -11,7 +11,7 @@ export const devCommand = async () => {
         root: config.root,
         base: '/',
         optimizeDeps: {
-            force: true
+            force: config.force
         },
         cacheDir: config.cacheDir,
         server: {

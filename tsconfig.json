@@ -10,7 +10,8 @@
             "@/*": [
                 "src/*"
             ]
-        }
+        },
+        "noUnusedLocals": false
     },
     "include": [
         "src/**/*.ts",

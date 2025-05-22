@@ -13,15 +13,15 @@ export const renderHtmlPlugin = (config: IConfig): Plugin => {
             return {
                 html,
                 tags: [
-                    // {
-                    //     tag: 'link',
-                    //     attrs: {
-                    //         rel: 'icon',
-                    //         href: `${config.siteData?.icon}`,
-                    //         type: 'image/image/svg+xml'
-                    //     },
-                    //     injectTo: 'head'
-                    // },
+                //     {
+                //         tag: 'link',
+                //         attrs: {
+                //             rel: 'icon',
+                //             href: ``,
+                //             type: 'image/image/svg+xml'
+                //         },
+                //         injectTo: 'head'
+                //     },
                     {
                         tag: 'script',
                         attrs: {
@@ -38,12 +38,9 @@ export const renderHtmlPlugin = (config: IConfig): Plugin => {
                 server.middlewares.use(async (req, res, next) => {
                     const url = req.url && cleanUrl(req.url)
                     if (url?.endsWith('.html')) {
-                        console.log(`可以进行重写渲染`)
                         const templatePath = resolve(PKG_ROOT, 'template.html')
-                        console.log(templatePath)
                         let html = fs.readFileSync(templatePath, 'utf8').replace('{title}', '这是一个标题')
                         html = await server.transformIndexHtml(url, html, req.originalUrl)
-                        console.log(req.url)
                         res.statusCode = 200
                         res.setHeader('Content-Type', 'text/html')
                         res.end(html)

@@ -34,7 +34,7 @@
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.1.7",
-        "@vitejs/plugin-vue": "^5.2.4",
+        "@vitejs/plugin-vue": "^6.0.0",
         "cac": "^6.7.14",
         "chalk": "^5.4.1",
         "tailwindcss": "^4.1.7",

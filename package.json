@@ -36,7 +36,7 @@
         "@tailwindcss/vite": "^4.1.7",
         "@vitejs/plugin-vue": "^5.2.4",
         "cac": "^6.7.14",
-        "chalk": "^5.4.1",
+        "chalk": "^6.0.0",
         "tailwindcss": "^4.1.7",
         "vite": "^6.3.5",
         "vue": "^3.5.14",
